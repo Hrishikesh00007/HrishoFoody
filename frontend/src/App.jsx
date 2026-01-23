@@ -10,7 +10,7 @@ import useGetCity from './hooks/useGetCity'
 import useGetMyShop from './hooks/useGetMyShop'
 import CreateEditShop from './pages/CreateEditShop'
 export const serverUrl = "http://localhost:8000"
-function App() {
+function App() { 
   useGetCurrentUser()
   useGetCity()
   useGetMyShop()
