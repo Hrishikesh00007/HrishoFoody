@@ -52,8 +52,8 @@ function AddItem() {
             const result = await axios.post(`${serverUrl}/api/item/add-item`, formData, { withCredentials: true })
             dispatch(setMyShopData(result.data))
             console.log(result.data)
-        //    setLoading(false)
-        //    navigate("/")
+            setLoading(false)
+          navigate("/")
         } catch (error) {
             console.log(error)
             setLoading(false)
