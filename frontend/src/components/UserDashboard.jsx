@@ -5,7 +5,7 @@ import CategoryCard from "./CategoryCard";
 import { FaCircleChevronLeft } from "react-icons/fa6";
 import { FaCircleChevronRight } from "react-icons/fa6";
 import { useSelector } from "react-redux";
-// import FoodCard from "./FoodCard";
+ import FoodCard from "./FoodCard";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { serverUrl } from "../App";
@@ -200,11 +200,11 @@ function UserDashboard() {
           Suggested Food Items
         </h1>
 
-        {/* <div className="w-full h-auto flex flex-wrap gap-[20px] justify-center">
+        <div className="w-full h-auto flex flex-wrap gap-[20px] justify-center">
           {updatedItemsList?.map((item, index) => (
             <FoodCard key={index} data={item} />
           ))}
-        </div> */}
+        </div>
       </div>
     </div>
   );
